@@ -1,0 +1,17 @@
+# CPU-only PyTorch wheels -> much smaller, fits Streamlit Community Cloud limits
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+
+timm
+torchmetrics
+grad-cam
+opencv-python-headless
+pillow
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+streamlit
+tqdm

@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Downloaded datasets (large — never commit)
+datasets/
+datasetlar/
+data/cat_dog/
+*.zip
+
+# Generated outputs
+onnx_models/
+
+# Secrets
+kaggle.json
+.kaggle/
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+
