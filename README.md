@@ -3,6 +3,8 @@
 A modular PyTorch image-classification pipeline with training metrics, learning curves,
 Grad-CAM explainability, an ONNX exporter and an interactive **Streamlit** demo.
 
+Try the live demo: [app-link](https://image-classification-oz.streamlit.app/)
+
 ## 📂 Datasets
 
 | # | Project | Description |
