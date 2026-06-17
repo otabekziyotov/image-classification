@@ -41,36 +41,6 @@ class ModelInferenceVisualizer:
         tensor = tensor.permute(1, 2, 0)  
         return (tensor.cpu().numpy() * 255).astype(np.uint8)
 
-    # def plot_value_array(self, logits, gt, class_names, ax=None):
-    #     probs = torch.nn.functional.softmax(logits, dim=1)
-    #     pred_class = torch.argmax(probs, dim=1)
-
-    #     # Use existing axes if provided
-    #     if ax is None: ax = plt.gca()
-        
-    #     ax.grid(visible=True)
-    #     ax.set_xticks(range(len(class_names)))
-    #     ax.set_xticklabels(class_names, rotation='vertical')
-    #     ax.set_yticks(np.arange(0.0, 1.1, 0.1))
-    #     bars = ax.bar(range(len(class_names)), [p.item() for p in probs[0]], color="#777777")
-    #     ax.set_ylim([0, 1])
-        
-    #     # Handle ground truth comparison
-    #     if isinstance(gt, str):
-    #         gt_idx = class_names.index(gt)  # Convert string GT to index
-    #         bars[pred_class].set_color('green' if pred_class == gt_idx else 'red')
-    #     else:
-    #         bars[pred_class].set_color('green' if pred_class == gt else 'red')
-        
-    #     # Only save/close for standalone use (demo mode)
-    #     if ax is None:
-    #         import io
-    #         buf = io.BytesIO()
-    #         plt.tight_layout()
-    #         plt.savefig(buf, format='png')
-    #         plt.close()
-    #         buf.seek(0)
-    #         return buf
 
     def plot_value_array(self, logits, gt, class_names, ax=None):
         probs = torch.nn.functional.softmax(logits, dim=1)
