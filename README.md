@@ -3,6 +3,18 @@
 A modular PyTorch image-classification pipeline with training metrics, learning curves,
 Grad-CAM explainability, an ONNX exporter and an interactive **Streamlit** demo.
 
+## 📂 Datasets
+
+| # | Project | Description |
+|---|---------|-------------|
+| 1 | 🐾 **Pet Disease** | Classify diseases in pet images |
+| 2 | 😊 **Facial Expression** | Recognize human facial emotions |
+| 3 | 🌍 **Geo Scene** | Classify geographic/landscape scenes |
+| 4 | 🫘 **Lentils** | Identify lentil types by visual features |
+| 5 | 🚗 **Car Brands** | Recognize car manufacturers from photos |
+| 6 | 🐕 **Dog Breeds** | Classify dog breeds |
+| 7 | 🍎 **Apple Disease** | Detect diseases in apple leaf images |
+
 ## Features
 - 🏋️ Training / validation loop with accuracy, F1 and early stopping (`src/train.py`)
 - 📈 Learning-curve plots (`src/plot.py`)
@@ -21,10 +33,13 @@ saved_models/       # trained checkpoints  ({ds}_best_model.pth)
 saved_cls_names/    # pickled class names  ({ds}_cls_names.pkl)
 demo_ims/           # sample images shown in the demo
 ```
+## Install required dependencies
+```bash
+pip install -r requirements.txt
+```
 
 ## Run the demo locally
 ```bash
-pip install -r requirements.txt
 streamlit run demo.py
 ```
 
